@@ -1,3 +1,5 @@
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 This knowledge distilation experiment adopted the method TED(Task rElated Distillation) introduced in [Less is More: Task-aware Layer-wise Distillation for Language Model Compression](https://arxiv.org/pdf/2210.01351) to distil from Deberta-v3-base to Debertav3-xsmall. 
 ### Hardware Specifications
 - **CPU Cores**: 16
