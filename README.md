@@ -38,7 +38,7 @@ The training objective is
 ```math
 \min_{\Theta_s,\mathcal{W}_s} \mathcal{L}(\Theta_s)+\alpha_1 \mathcal{D}_{pred}(\Theta_t,\Theta_s)+\alpha_2 \mathcal{D}_{TED}([\Theta_t,\mathcal{W}_t],[\Theta_s,\mathcal{W}_s])
 ```
-where $\Theta_s,\mathcal{W}_s$ represent the backbone and filter parameters of the student model, respectively, while  $\Theta_t,\mathcal{W}_t$  denote the corresponding parameters of the teacher model. $\mathcal{L}(\Theta_s)$ is the target task loss, e.g. cross entropy loss in classification tasks. $\mathcal{D}_{pred}(\Theta_t,\Theta_s)$ is the distillation loss, a distance metric between the output predictions of the teacher and the student. The last term denotes the following loss: \
+where $\Theta_s,W_s$ represent the backbone and filter parameters of the student model, respectively, while  $\Theta_t,\W_t$  denote the corresponding parameters of the teacher model. $L(\Theta_s)$ is the target task loss, e.g. cross entropy loss in classification tasks. $D_{pred}(\Theta_t,\Theta_s)$ is the distillation loss, a distance metric between the output predictions of the teacher and the student. The last term denotes the following loss: \
 ```math
 \mathcal{D}_{TED}([\Theta_t,\mathcal{W}_t],[\Theta_s,\mathcal{W}_s]) = \sum_{k=1}^{K}MSE \Bigl(g_t^k(H_t^{M(k)};W_t^k),g_s^k(H_s^k;W_s^k)\Bigr)
 ```
